@@ -13,3 +13,5 @@ const { firstName, lastName, skills, ...info } = user
 const [primary] = skills
 
 console.log(info)
+
+console.log('teste')
