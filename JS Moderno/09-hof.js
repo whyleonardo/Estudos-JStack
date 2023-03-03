@@ -12,6 +12,10 @@ const findIndex = array.findIndex(({ price }) => price >= 20000)
 const some = array.some(({ price }) => price > 3500)
 const every = array.every(({ price }) => price >= 1000)
 
+// map
+const map = array.map((product) => ({ ...product, subtotal: product.price * product.quantity }))
 
+// filter
+const filter = array.filter((product) => product.quantity > 1)
 
-console.log(every)
+console.log(filter)
